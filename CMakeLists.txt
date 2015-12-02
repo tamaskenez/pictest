@@ -9,3 +9,4 @@ target_link_libraries(mysharedlib PRIVATE mystaticlib)
 add_executable(myexe main.c)
 target_link_libraries(myexe mysharedlib)
 
+install(TARGETS myexe DESTINATION bin)
