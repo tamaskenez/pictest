@@ -1,3 +1,5 @@
+#include "sh.h"
+
 int st(int);
 
-int sh(int a) { return st(a)+10; }
+MYSHAREDLIB_EXPORT int sh(int a) { return st(a)+10; }
